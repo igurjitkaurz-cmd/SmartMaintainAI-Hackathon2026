@@ -13,3 +13,10 @@ node_modules/
 **/node_modules/
 dist/
 **/dist/
+
+a362f9666efbf545488dbd39bfc499e80be9f2cbbfb4fc880cf98be3c496b0d7
+
+.env
+.env.*
+!.env.example
+*.db

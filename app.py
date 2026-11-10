@@ -1,3 +1,4 @@
+import os
 import sqlite3
 from pathlib import Path
 
@@ -21,7 +22,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 # --------------------------------------------------
 
 app = Flask(__name__)
-app.secret_key = "smartmaintainai_change_this_secret_key"
+app.secret_key = os.environ.get("SECRET_KEY")
+if not app.secret_key:
+    raise RuntimeError("SECRET_KEY environment variable is not set.")
 
 BASE_DIR = Path(__file__).resolve().parent
 DB_NAME = BASE_DIR / "smartmaintain.db"
