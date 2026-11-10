@@ -119,7 +119,20 @@ cd SmartMaintainAI-Hackathon2026
 Open a terminal:
 
 ```bash
-cd SmartmaintainAI
+```
+
+The Flask backend (`app.py`) is in the repository root, so run the following commands from the project root.
+
+Set a secret key for the current terminal session:
+
+**Windows PowerShell:**
+```powershell
+$env:SECRET_KEY = (python -c "import secrets; print(secrets.token_hex(32))")
+```
+
+**macOS / Linux:**
+```bash
+export SECRET_KEY="$(python -c 'import secrets; print(secrets.token_hex(32))')"
 ```
 
 Install the required Python packages:
@@ -140,7 +153,7 @@ The backend will run at:
 
 ### 4. Start the Frontend
 
-Open another terminal in the project root:
+Open another terminal in the project root and run:
 
 ```bash
 cd frontend
