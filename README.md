@@ -179,8 +179,8 @@ SmartMaintainAI aims to reduce unexpected downtime, improve machine monitoring, 
 | Vanisha | [@vanishav143-rgb](https://github.com/vanishav143-rgb) |
 | Pushtum | [@pushtam0234-afk](https://github.com/pushtam0234-afk) |
 | Anshdeep Singh | [@singhanshdeep2707-bit](https://github.com/singhanshdeep2707-bit) |
-| Harmeet Singh | To be added |
-| Harjap | To be added |
+| Harmeet Singh | [@harryx315](https://github.com/harryx315) |
+| Harjap | [@Harjap-kaur](https://github.com/Harjap-kaur) |
 
 ## 🏆 Hackathon Project
 
