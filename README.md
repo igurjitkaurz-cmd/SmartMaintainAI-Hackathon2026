@@ -116,12 +116,7 @@ cd SmartMaintainAI-Hackathon2026
 
 ### 3. Start the Backend
 
-Open a terminal:
-
-```bash
-```
-
-The Flask backend (`app.py`) is in the repository root, so run the following commands from the project root.
+From the project root, start the Flask backend (`app.py`) using the following steps.
 
 Set a secret key for the current terminal session:
 
