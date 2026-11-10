@@ -1,0 +1,86 @@
+/* CNCGuard AI — Shared App Layout Architecture */
+
+.app-layout-root {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f8fafc;
+  color: #0f172a;
+  overflow-x: hidden;
+}
+
+.app-layout-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0; /* Prevents flex children from overflowing horizontally */
+  min-height: 100vh;
+}
+
+.app-main-content {
+  flex: 1;
+  padding: 2rem 2.25rem;
+  background-color: #f8fafc;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Polished Card Container for Views & Placeholders */
+.placeholder-page {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2.25rem;
+  max-width: 980px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.placeholder-page h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.placeholder-page p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.placeholder-tag {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.78rem;
+  font-family: monospace;
+  border-radius: 4px;
+  background-color: #f0f9ff;
+  color: #0284c7;
+  border: 1px solid #bae6fd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .app-main-content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .placeholder-page {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-main-content {
+    padding: 1rem 0.75rem;
+  }
+
+  .placeholder-page {
+    padding: 1.25rem 1rem;
+    border-radius: 8px;
+  }
+}
